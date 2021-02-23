@@ -8,9 +8,47 @@
         body>h1{
             text-align: center;
         }
+
+        .main{
+            padding: 10px 20px 0 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .main div{
+            width: 20%;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .main div a{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .main div a img{
+            width: 100%;
+            height: 100%;
+            transition: all 0.3s;
+        }
+
+        .main div a img:hover{
+            width: 120%;
+            height: 120%;
+        }
     </style>
 </head>
 <body>
     <h1>项目展示</h1>
+
+    <div class="main">
+        <div class="music">
+            <a href="https://yinghui25.github.io/music">
+                <img src="./img/music.jpg" />
+            </a>
+        </div>
+    </div>
 </body>
 </html>
